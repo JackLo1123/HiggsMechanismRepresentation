@@ -1,0 +1,124 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{braket}
+\usepackage{breqn}
+\newcommand{\Lagr}{\mathcal{L}}
+
+
+\title{Higgs Mechanism}
+\author{Lo,Yu-Hsuan  }
+\date{January 2, 2019}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+\section{Higgs Mechanism in Field Theory}
+\begin{frame}{Higgs Mechanism in Field Theory}
+    \begin{itemize}
+        \item It is as if the massless photon field $A_\mu (x)$ eat the Goldstone bosons from the $\theta$ field and get massive.
+        \item It would break gauge symmetry.
+    \end{itemize}
+    % It is as if the massless photon field $A_\mu (x)$ eat the Goldstone bosons from the $\theta$ field and get massive.\\
+    
+\end{frame}
+
+\begin{frame}{Gauged
+Complex Scalar Field Theory}
+    $$\Lagr=(\partial^\mu \psi^\dagger-iqA^\mu\psi^\dagger)(\partial_\mu \psi+iqA_\mu\psi)+\mu^2\psi^\dagger\psi-\lambda(\psi^\dagger\psi)^2-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}$$
+    is symmetry under local transformation 
+    \begin{align*}
+        \psi \rightarrow& \psi e^{i\alpha(x)}\\
+        A_\mu \rightarrow& A_\mu -\frac{1}{q}\partial_\mu \alpha(x)
+    \end{align*}
+    Ground states has the field $\psi(x)=\rho(x)e^{i\theta(x)}$, and we take $\theta(x)=\theta_0$.\\
+    We cannot change the phase of ground state at different x (local symmetry), nor for the entire system (global symmetry).
+    The broken symmetry ground state breaks global symmetry. Therefore it breaks local symmetry.
+\end{frame}
+
+\begin{frame}{Lagrangian in Polar Coordinates}
+    $$\partial_\mu +iqA_\mu\psi=(\partial_\mu\rho)e^{i\theta}+i(\partial_\mu\theta+qA_\mu )\rho e^{i\theta}$$
+    replace A using $$C_\mu\equiv A_\mu+\frac{1}{q}\partial_\mu \theta $$ leading $(\partial^\mu \psi^\dagger-iqA^\mu\psi^\dagger)(\partial_\mu \psi+iqA_\mu\psi)=(\partial_\mu\rho)^2+\rho^2q^2C_\mu C^\mu$ and $F_{\mu\nu}=\partial_\mu A_\nu- \partial_\nu A_\mu =\partial_\mu C_\nu- \partial_\nu C_\mu  $.\\
+    So the Lagrangian become $$\Lagr=(\partial_\mu \rho)^2+\rho^2q^2C^2+\mu^2\rho^2-\lambda\rho^4-\frac{1}{4}F^{\mu\nu}F_{\mu\nu}$$
+\end{frame}
+
+\begin{frame}{Break the Symmetry}
+    The minima of the potential are on the cycle $\rho=\sqrt{\frac{\mu^2}{2\lambda}}$.\\
+    We choose to break the symmetry with $\rho_0=\sqrt{\frac{\mu^2}{2\lambda}}$ and $\theta_0=0$.\\
+    To see the excitations in new ground state, expanding Lagrangian in terms of $\chi \equiv \sqrt{2} (\rho-\rho_0) $
+    % $$\Lagr $$
+    \begin{align*}
+        \Lagr =& \frac{1}{2}(\partial_\mu \chi)^2 - \mu^2\chi^2-\sqrt{\lambda}\mu\chi^3-\frac{\lambda}{4}\chi^4\\
+        &-\frac{1}{4}F_{\mu\nu }F^{\mu\nu}+\frac{M^2}{2}C^2\\
+        &+q^2\bigg(\frac{\mu^2}{\lambda}\bigg)^{\frac{1}{2}}\chi C^2+\frac{1}{2}q^2\chi^2C^2+...,
+    \end{align*}
+    where $M=q\sqrt{\frac{\mu^2}{\lambda}}$.
+\end{frame}
+
+\section{Supersymmertric Extension of the Higgs Mechanism}
+\begin{frame}{Supersymmertric Extension of the Higgs Mechanism}
+    $$\Lagr_{P.E.}=\frac{1}{2}m\Phi^2 + \mu\Phi_+\Phi_- + \lambda \Phi + g\Phi\Phi_+\Phi_- + h.c.  $$
+    $$\nu=F_k^*F_k \quad\text{and}\quad F_k=-\frac{\partial \Lagr}{\Phi_k} $$
+    $\Rightarrow
+    \begin{cases}
+        \lambda+ma+ga_+a_-=0 \\
+        a_-(\mu+ga)=0\\
+        a_+(\mu+ga)=0
+    \end{cases}$
+    has 2 solutions 
+    \begin{enumerate}
+        \item $a_+=0$, $a_-=0$, $a=-\frac{\lambda}{m}$
+        \item $a=-\frac{\mu}{g}$,  $a_+a_-=-\frac{1}{g}\bigg(\lambda-\frac{m\mu}{g}\bigg)$
+        $\Rightarrow e^\lambda a_+ $, $e^{-\lambda}a_-$
+    \end{enumerate}
+    % where $\lambda$ is an arbitrary complex number.
+    % \left\{
+    %             \begin{array}{ll}
+    %               x\\
+    %               \frac{1}{1+e^{-kx}}\\
+    %               \frac{e^x-e^{-x}}{e^x+e^{-x}}
+    %             \end{array}
+    %           \right.
+\end{frame}
+
+\begin{frame}{SUSY but not Gauge Symmetry theory}
+    % $$\Lagr=\frac{1}{4}(W^\alpha W_\alpha+\Bar{W}_{\Dot{\alpha}}\Bar{W}^{\Dot{\alpha}} )+\Phi_+^\dagger e^{eV}\Phi_+ + \Phi_-^\dagger e^{-eV}\Phi_- +m(\Phi_+\Phi_-+\Phi_+^\dagger\Phi_-^\dagger)+2\kappa V$$
+    % \begin{equation*}
+        
+    % \end{equation*}
+    
+    \begin{dmath*}
+        \Lagr=\frac{1}{4}(W^\alpha W_\alpha+\Bar{W}_{\Dot{\alpha}}\Bar{W}^{\Dot{\alpha}} )+\Phi_+^\dagger e^{eV}\Phi_+ + \Phi_-^\dagger e^{-eV}\Phi_- +m(\Phi_+\Phi_-+\Phi_+^\dagger\Phi_-^\dagger)+2\kappa V
+    \end{dmath*}
+    
+    \begin{enumerate}
+        \item The D-term $$eV(\Phi^*_+\Phi_+-\Phi_-^*\Phi_- +\frac{2\kappa}{e})=0$$
+        The degeneracy $a_\pm \rightarrow e^{\pm \lambda} a_{\pm} $ would keep the supersymmetry.
+        
+        \item One of the mass term 
+        $$\frac{1}{2}e^2(a_+^*a_+ + a_-^*a_-)V^2 \neq 0 $$
+        gives a mass to the vector field $\nu_m$.
+    \end{enumerate}
+    The spontaneous gauge symmetry breaking in supersymmetry theories give rise to an entire massive vector multiplet.
+    % The D-term $$eV(\Phi^*_+\Phi_+-\Phi_-^*\Phi_- +\frac{2\kappa}{e})=0$$
+    % The degeneracy $a_\pm \rightarrow e^{\pm \lambda} a_{\pm} $ would break the supersymmetry ordinary.
+    
+\end{frame}
+
+\begin{frame}{Reference}
+    \begin{thebibliography}{}
+    \bibitem{1}
+    Tom Lancaster,
+    \textit{Quantum Field Theory for the Gifted Amateur} 
+    \bibitem{2}
+     Julius Wess, Jonathan Bagger,\textit{Supersymmetry and supergravity}  
+    \end{thebibliography}
+\end{frame}
+
+
+\end{document}
